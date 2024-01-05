@@ -1,9 +1,9 @@
 
 import './App.css';
-
 import Button from 'react-bootstrap/Button';
-
 import React, {useEffect, useState} from 'react';
+
+import Dog from './components/Dog';
 
 const App = () => {
   const[dog, setDog] = useState(null);
@@ -53,7 +53,7 @@ const App = () => {
       )}
       <Button onClick={HandleNext}>Next</Button>
     </div>
-
+        <Dog />
     </>
   );
   
